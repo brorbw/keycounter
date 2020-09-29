@@ -8,6 +8,9 @@ INSTALLDIR=/usr/local/bin
 all: $(SOURCES)
 	$(CC) $(SOURCES) $(CFLAGS) -o $(EXECUTABLE)
 
+debug: $(SOURCES)
+	$(CC) $(SOURCES) $(CFLAGS) -g -o $(EXECUTABLE)
+
 install: all
 	mkdir -p $(INSTALLDIR)
 	cp $(EXECUTABLE) $(INSTALLDIR)
