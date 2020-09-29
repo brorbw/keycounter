@@ -1,4 +1,4 @@
-# Mac OS X Keylogger
+# Mac OS X Keycounter
 
 This repository holds code for a simple keypress counter for MacOS. It is not malicious in any way!!! It doesn't even read the keycodes of your presses. Its intended to count the total number of keypresses put into your computer. How you use that information is up to you.
 
@@ -30,20 +30,6 @@ You can completely remove the application from your system (including the startu
 
 ```bash
 $ sudo make uninstall
-```
-
-### Optional Parameters
-
-You can pass in two optional parameters to the program. The `clear` option will clear the logs at the default location. Any other argument passed in will be used as the path to the log file for that process. See below:
-
-```bash
-# Clear the logfile.
-$ keylogger clear
-Logfile cleared.
-
-# Specify a logfile location.
-$ keylogger ~/logfile.txt
-Logging to: /Users/Casey/logfile.txt
 ```
 
 ## Contributing

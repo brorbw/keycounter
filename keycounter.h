@@ -1,5 +1,5 @@
-#ifndef __KEYLOGGER_H__
-#define __KEYLOGGER_H__
+#ifndef __KEYCOUNTER_H__
+#define __KEYCOUNTER_H__
 
 #include <ApplicationServices/ApplicationServices.h>
 #include <Carbon/Carbon.h>

@@ -1,4 +1,4 @@
-#include "keylogger.h"
+#include "keycounter.h"
 
 time_t timeSinceLastKeypress;
 long keyPressesSinceLastWrite;
@@ -63,6 +63,7 @@ CGEventRef CGEventCallback(CGEventTapProxy proxy, CGEventType type,
     return event;
   }
   time_t tempTime = time(NULL);
+  fprintf(stderr, "%s", "meh");
   timeSinceLastKeypress = tempTime;
   ++keyPressesSinceLastWrite;
 
