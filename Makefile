@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-framework ApplicationServices -framework Carbon
 SOURCES=keycounter.c
 EXECUTABLE=keycounter
-PLIST=keylogger.plist
+PLIST=keycounter.plist
 INSTALLDIR=/usr/local/bin
 
 all: $(SOURCES)
